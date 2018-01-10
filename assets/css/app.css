@@ -1,0 +1,12 @@
+.post-time{
+	display: block;
+	background: #f4f4f4;
+	padding: 6px;
+}
+.post-body{
+	padding-top: 10px;
+	padding-bottom: 12px;
+	border-top: 1px solid #ccc;
+	border-bottom:  1px solid #ccc;
+
+}

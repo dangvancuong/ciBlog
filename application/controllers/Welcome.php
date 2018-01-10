@@ -20,6 +20,22 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('layout');
 	}
+	public function demo()
+	{
+		$data['name'] = "cuong";
+		$this->load->view('layout',$data);
+	}
+	public function insertUser()
+	{ 
+
+		$data = array(
+	        'name' => $_POST['name'],
+	        'email' => $_POST['email'],
+	        'password' => md5($_POST['password'])
+		); 
+		$this->db->insert('users', $data);
+	}
+
 }
