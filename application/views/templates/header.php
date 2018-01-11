@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<title>ci blog</title>
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+	<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/app.css">
+
 </head>
 <body> 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,6 +30,11 @@
 	        <a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
 	      </li>
 	    </ul> 
+	    <ul class="navbar-nav pull-right">
+	    	<li class="nav-item">
+	    		<a class="nav-link" href="<?php echo base_url(); ?>posts/create"> Create Post</a>
+	    	</li>
+	    </ul>
 	  </div>
 	</nav>
 	<div class="container">
